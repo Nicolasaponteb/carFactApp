@@ -15,8 +15,21 @@ class CreatedCarVC: UIViewController {
     
     @IBOutlet weak var infoLabel: UILabel!
     
+    @IBOutlet weak var showInfoButton: UIButton!
+    @IBOutlet weak var turnOnButton: UIButton!
+    @IBOutlet weak var turnOffButton: UIButton!
+    @IBOutlet weak var speedUpButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        showInfoButton.setTitle("Show Information", for: .normal)
+        
+        turnOnButton.setTitle("Turn On", for: .normal)
+        
+        turnOffButton.setTitle("Turn Off", for: .normal)
+        
+        speedUpButton.setTitle("Speed up", for: .normal)
     
         
         switch carType! {

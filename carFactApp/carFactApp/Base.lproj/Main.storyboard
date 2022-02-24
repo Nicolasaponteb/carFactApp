@@ -54,6 +54,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="GrS-Vg-ZEo"/>
                     <connections>
+                        <outlet property="fordCarButton" destination="8qw-OM-Srh" id="Anv-mD-M8H"/>
+                        <outlet property="simpleCarButton" destination="mHW-SD-mlP" id="b3i-W4-9xR"/>
+                        <outlet property="titleLabel" destination="w1U-ur-0GS" id="WHT-sZ-bhh"/>
                         <segue destination="ZJG-XS-Wov" kind="show" identifier="segueCreatedCar" id="76Z-lz-WQM"/>
                     </connections>
                 </viewController>
@@ -140,6 +143,10 @@
                     <connections>
                         <outlet property="imageView" destination="ozi-cg-tsa" id="FFD-IW-cgb"/>
                         <outlet property="infoLabel" destination="dgG-Xl-fZs" id="bIq-Ra-5U0"/>
+                        <outlet property="showInfoButton" destination="S4B-cx-ohN" id="8UK-om-NkD"/>
+                        <outlet property="speedUpButton" destination="0bL-2q-IEZ" id="K0F-tU-Qu4"/>
+                        <outlet property="turnOffButton" destination="1Oi-9A-Cih" id="oVo-oq-Qdi"/>
+                        <outlet property="turnOnButton" destination="AkJ-W8-GJq" id="2DK-h6-SQa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VM1-gy-Pmj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

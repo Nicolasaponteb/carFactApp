@@ -10,10 +10,22 @@ import UIKit
 class ViewController: UIViewController {
     
     var carType:Int?
-
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var simpleCarButton: UIButton!
+    @IBOutlet weak var fordCarButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleLabel.text = "Car Factory"
+        titleLabel.font = .boldSystemFont(ofSize: 30)
+        
+        simpleCarButton.setTitle("Create simple car", for: .normal)
+        
+        fordCarButton.setTitle("Create Ford car", for: .normal)
     }
 
 
