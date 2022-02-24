@@ -110,7 +110,7 @@
                                     <action selector="speedUP:" destination="ZJG-XS-Wov" eventType="touchUpInside" id="Hp1-x5-GHF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgG-Xl-fZs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgG-Xl-fZs">
                                 <rect key="frame" x="16" y="696" width="382" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="cU4-xe-ayw"/>
