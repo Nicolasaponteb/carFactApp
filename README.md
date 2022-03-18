@@ -7,7 +7,41 @@ The application is a menu of a car factory that can makes a simple car and elect
 
 ### Built with
 
-The project was built using the Swift programming language in Xcode. Git was used for version management.
+The project was built using the Swift programming language in Xcode and using UIKit framework. Git was used for version management.
 
 ## Important Code
 
+In this app we have a viewController for the menu and other to the created car that change respectively to the simpleCar Class and fordCar Class.
+
+### Car Classes
+
+One class was created to define the attributes and methods for simple Car and a second class for the electric car that inherits methods and attributes for the simple car Class, and has its own attributes and meethods.
+
+### Menu ViewController
+
+This viewController have two buttons, one for create a simple car and other for create a electric ford car. Also has functions for call a performSegue and a number is assigned to a variable thats represents the car type.
+
+```swift
+@IBAction func createSimpleCar(_ sender: Any) {
+        
+        carType = 0
+        
+        performSegue(withIdentifier: "segueCreatedCar", sender: self)
+    }
+    
+    
+    @IBAction func createFordCar(_ sender: Any) {
+        
+        carType = 1
+        
+        performSegue(withIdentifier: "segueCreatedCar", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destino = segue.destination as? CreatedCarVC{
+            
+            destino.carType = self.carType
+        }
+    }
+```
