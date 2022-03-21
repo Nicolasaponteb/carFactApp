@@ -48,3 +48,31 @@ This viewController have two buttons, one for create a simple car and other for 
 
 ### CreatedCar ViewController
 
+This viewController shows a view that change depends on carType defined in the menu viewController.
+If the carType variable defined is equal to zero is a simple car, and if the carType is equal to one is  a ford electric car.
+
+We have a four buttons which are showInfo, TurnOn, turnOff and speedUp. Each button have a function that depends the number defined in the carType variable and do an action or call information for the respective class.
+
+For example, this is the code for de actions of showInfo button and the other buttons has a similar actions.
+
+```swift
+@IBAction func showInfo(_ sender: Any) {
+        
+        switch carType! {
+        case 0:
+            simpleCar?.color = "Negro"
+            simpleCar?.precio = 5000
+            
+            infoLabel.text = "El automóvil tiene \(simpleCar!.numeroLlantas) llantas, es de color \(simpleCar!.color) y su precio es de \(simpleCar!.precio) USD."
+            
+        case 1:
+            fordCar!.color = "Azul"
+            fordCar!.precio = 10000
+            
+            infoLabel.text = "El Ford tiene \(fordCar!.numeroLlantas) llantas, es de color \(fordCar!.color) y su precio es de \(fordCar!.precio) USD y su carga está al \(fordCar!.battery) de batería."
+            
+        default:
+            infoLabel.text = "Error"
+        }
+    }
+```
